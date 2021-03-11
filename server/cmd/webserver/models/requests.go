@@ -71,9 +71,7 @@ type UserUpdateRequest struct {
 	CreatedAt         string `json:"createdAt" example:"1554441489907"`
 	UpdatedAt         string `json:"updatedAt" example:"1554441489907"`
 	ImageUrl          string `json:"image_url" example:"https://s.gravatar.com/avatar/0a601b86076eb9fbf7d78da60a59ee8a?s=480&r=pg&d=https%3A%2F%2Fcdn.auth0.com%2Favatars%2Fsi.png"`
-	AcceptedTermsDate string `json:"updatedAt" example:"1554441489907"`
-	doIntro           bool   `json:"doIntro" example:True`
-}
+ }
 
 type UserRequest struct {
 	Id                string `json:"id" example:"auth0|ad8b4fd5a359e62e34safas"`
@@ -83,9 +81,7 @@ type UserRequest struct {
 	ImageUrl          string `json:"image_url" example:"https://s.gravatar.com/avatar/0a601b86076eb9fbf7d78da60a59ee8a?s=480&r=pg&d=https%3A%2F%2Fcdn.auth0.com%2Favatars%2Fsi.png"`
 	CreatedAt         string `json:"createdAt" example:"1554441489907"`
 	UpdatedAt         string `json:"updatedAt" example:"1554441489907"`
-	AcceptedTermsDate string `json:"updatedAt" example:"1554441489907"`
-	IsIntro           bool   `json:"isIntro" example:True`
-}
+ }
 
 type UpdatePropertyRequest struct {
 	ParcelID      int    `json:"parcelID" example:9`

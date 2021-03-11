@@ -31,7 +31,7 @@ func (a UserProvider) Get(id string) (User, error) {
 
 	// fmt.Println(err, "error")
 
-	if db :=  a.db.Where(User{ID: id}).Find(&users); db.Error != nil {
+	if db := a.db.Where(User{ID: id}).Find(&users); db.Error != nil {
 		if IsNotFound(db.Error) {
 			return User{}, &recordNotFound{"get contact", 0}
 		}
@@ -141,16 +141,13 @@ func (a UserProvider) UpdateUserDetails(user User) (User, error) {
 	if user.CreatedAt.IsZero() {
 		user.CreatedAt = existing.CreatedAt
 	}
-	if user.AcceptedTermsDate.IsZero() {
-		user.AcceptedTermsDate = existing.AcceptedTermsDate
-	}
+
 	// if user.doIntro == false {
 	// 	user.doIntro = existing.doIntro
 	// }
 	if user.IsActive == false {
 		user.IsActive = existing.IsActive
-	}	   
-
+	}
 
 	if db := a.db.Save(&user); db.Error != nil {
 		return User{}, db.Error

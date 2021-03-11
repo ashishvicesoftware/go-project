@@ -99,9 +99,7 @@ type UserResponse struct {
 	ImageUrl          string `json:"image_url" example:"Washington"`
 	CreatedAt         int64  `json:"createdAt" example:"1554441489907"`
 	UpdatedAt         int64  `json:"updatedAt" example:"1554441489907"`
-	AcceptedTermsDate int64  `json:"AcceptedTermsDate" example:"1554441489907"`
-	IsIntro           bool   `json:"isIntro" example:True`
-}
+ }
 
 type RoleResponse struct {
 	ID        int    `json:"id" example:"1"`

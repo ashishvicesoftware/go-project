@@ -18,12 +18,11 @@ import (
 	"github.com/gorilla/mux"
 	httpSwagger "github.com/swaggo/http-swagger"
 
-	_ "github.com/vicesoftware/goproject/cmd/webserver/docs"
-	"github.com/vicesoftware/goproject/cmd/webserver/middleware"
-	"github.com/vicesoftware/goproject/cmd/webserver/models"
-	"github.com/vicesoftware/goproject/pkg/database"
-	"github.com/vicesoftware/goproject/pkg/logWriter"
-	"go.uber.org/zap"
+	_ "github.com/ashishvicesoftware/go-project/server/cmd/webserver/docs"
+ 
+	"github.com/ashishvicesoftware/go-project/server/cmd/webserver/models"
+	"github.com/ashishvicesoftware/go-project/server/pkg/database"
+ 	"go.uber.org/zap"
 	// "github.com/auth0/go-jwt-middleware"
 	// "github.com/dgrijalva/jwt-go"
 )

@@ -3,8 +3,8 @@ package main
 import (
 	"os"
 
-	"github.com/vicesoftware/goproject/pkg/database"
-	"github.com/vicesoftware/goproject/pkg/log"
+	"github.com/ashishvicesoftware/go-project/server/pkg/database"
+	"github.com/vicesoftware/vice-go-boilerplate/pkg/log"
 	"gopkg.in/alecthomas/kingpin.v2"
 )
 
